@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: antiquewhite;
+}
+progress {
+  width: 300px;
+  height: 30px;
+  appearance: none;
+  border: 1px solid #000;
+}
+::-webkit-progress-bar {
+  background-color: transparent;
+}
+::-webkit-progress-value {
+  background-color: #37fd00;
+}
+.progress-counter {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100px;
+}

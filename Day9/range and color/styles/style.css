@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.range-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+     margin: 100px 0;
+}
+.range,.color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box{
+    width: 50%;
+    height: 80px;
+    padding: 10px;
+    margin: auto;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    font-size: 24px;
+    color: #333;
+}
+.color{
+    width: 250px;
+    height: 50px;
+     font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
