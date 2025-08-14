@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+}
+.btn{
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+     transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #b30000;
+    transform: scale(1.1);
+}
