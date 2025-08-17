@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #968239;
+  padding: 15px;
+  z-index: 1000;
+}
+nav,
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  gap: 3rem;
+}
+ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+ul li a:hover {
+  color: #fdf900;
+}
+
+/* start main */
+#hero-section .layer p {
+  text-align: center;
+  text-wrap: balance;
+}
+main #hero-section {
+  height: 100vh;
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+#hero-section h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+#hero-section .layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(55, 30, 10, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.cards {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+  border-radius: 5px;
+  gap: 10px;
+}
+.card {
+  width: calc(25% - 20px);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.296);
+  background: #fff;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.img-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.img-container:hover .card-img {
+  transform: scale(1.1);
+}
+
+.img-container:hover .img-layer {
+  transform: translateY(0);
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-user-name {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1050px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    gap: 1rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* end main */
+/* footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(38, 38, 38);
+  color: #fff;
+}
