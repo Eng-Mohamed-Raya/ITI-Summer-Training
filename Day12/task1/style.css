@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+    height: 80vh;
+     display: flex;
+     flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+
+.player1,.player2{
+width: 250px;
+position: absolute;
+bottom: 60px;
+}
+.ball{
+    width: 70px;
+    position: absolute;
+    left: 13%;
+    animation: moveBall 700ms linear  infinite alternate ;
+}
+.player1{
+    left: 50px;
+}
+
+.player2{
+    right: 0px;
+    bottom: 10%;
+}
+
+
+
+@keyframes moveBall {
+  0% {
+    transform: rotate(0deg);
+    left:13%;
+    bottom: 20%;
+  }
+  10% {
+    transform:  rotate(90deg);
+    left:20%;
+    bottom: 26%;
+  }
+  20% {
+    transform:  rotate(180deg);
+    left:27%;
+    bottom: 32%;
+  }
+  30% {
+    transform:  rotate(270deg);
+    left:34%;
+    bottom: 38%;
+  }
+  40% {
+    transform:  rotate(360deg);
+    left:41%;
+    bottom: 44%;
+  }
+  50% {
+    transform:  rotate(0deg);
+    left:48%;
+    bottom: 50%;
+  }
+  60% {
+    transform:  rotate(90deg);
+    left:55%;
+    bottom: 44%;
+  }
+  70% {
+    transform:  rotate(180deg);
+    left:62%;
+    bottom: 38%;
+  }
+  80% {
+    transform:  rotate(270deg);
+    left:69%;
+    bottom: 32%;
+  }
+  90% {
+    transform:  rotate(360);
+    left:76%;
+    bottom: 26%;
+  }
+  100% { 
+    transform:rotate(0);
+    left:83%;
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+    .player1,.player2{
+    width:150px;
+    bottom: 10px;
+    }
+    .ball{
+        width: 40px;
+        position: absolute;
+        left: 13%;
+        animation: moveBall 500ms linear  infinite alternate ;
+    }
+
+    .player2{
+        bottom: 20px;
+    }
+
+}
