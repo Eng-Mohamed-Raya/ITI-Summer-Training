@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main #hero-section {
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+}
+textarea{
+  height: 100px;
+}
+.card{
+  height:450px;
+}

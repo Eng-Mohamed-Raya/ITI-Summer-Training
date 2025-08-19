@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 13 || Bootstrap</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero-section" class="vh-100 text-white position-relative">
+        <div
+          class="layer position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center bg-secondary bg-opacity-25"
+        >
+          <h1 class="fs-1 fw-bold">Welcome to My Website</h1>
+          <p class="text-center fs-5">
+            A simple responsive landing page using Bootstrap
+          </p>
+          <button class="btn btn-light px-4 py-2 fs-4">Get Started</button>
+        </div>
+      </section>
+      <div class="container mt-5">
+        <div class="row text-center justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-laptop fs-1 text-secondary"></i>
+            <p class="fs-4 fw-bold">Responsive Design</p>
+            <p class="">Built with a mobile-first approach.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-gauge-high fs-1 text-success"></i>
+            <p class="fs-4 fw-bold">Fast & Lightweight</p>
+            <p class="">Optimized for performance.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-screwdriver-wrench fs-1 text-warning"></i>
+            <p class="fs-4 fw-bold">Easy Customization</p>
+            <p class="">Modify styles with ease.</p>
+          </div>
+        </div>
+      </div>
+      <section class="container">
+        <div class="cards row gap-lg-1 justify-content-center">
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-6 col-lg-3 mt-4">
+            <img
+              src="./imgs/Card1.jpg"
+              class="card-img-top overflow-hidden"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Build modern websites with the latest technologies.
+              </p>
+              <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container  w-50  my-5">
+        <h3 class="h3 text-center mb-4">Contact Us</h3>
+        <form class="">
+          <div class="mb-3">
+            <label for="exampleInputText" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputText"
+              placeholder="Enter you Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter you Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputText" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="exampleInputText"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary w-100">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="text-center text-white bg-black pt-4 pb-2">
+      <p>© 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
